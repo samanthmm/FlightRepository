@@ -1,0 +1,118 @@
+<div class="profile-page">
+      
+            <mat-card >
+              <form>
+                  
+                <mat-form-field appearance="outline" >
+                    
+                    <input
+                     minlength="3"
+                      matInput
+                      placeholder="firstName"
+                      required
+                      name="firstname"
+                      ngModel
+                      #firstname="ngModel">
+                      <mat-icon matSuffix>perm_identity</mat-icon>
+                    <mat-error
+                      *ngIf="firstname.invalid">
+                      firstname is required
+                    </mat-error>
+                  </mat-form-field>
+                   
+                   
+                  <mat-form-field appearance="outline">
+                    <input
+                    minlength="3"
+                      matInput
+                      placeholder="lastName"
+                      required
+                      name="lastname"
+                      ngModel
+                      #lastname="ngModel">
+                    <mat-icon matSuffix>perm_identity</mat-icon>
+                    <mat-error
+                      *ngIf="lastname.invalid">
+                      lastname is required
+                    </mat-error>
+                  </mat-form-field>
+          
+                 
+                <mat-form-field appearance="outline">
+                  <input
+                    matInput
+                    placeholder="Email"
+                    required
+                    name="email"
+                    ngModel
+                    #email="ngModel">
+                    <mat-error *ngIf="email.invalid">Email is required</mat-error>
+                    <mat-icon  matSuffix >email</mat-icon>
+                </mat-form-field>
+              
+                <mat-form-field appearance="outline">
+                    <textarea
+                      matInput
+                      placeholder="address"
+                      required
+                      name="address"
+                      ngModel
+                      #adress="ngModel">
+                      </textarea>
+                    <mat-icon matSuffix></mat-icon>
+                    
+                  </mat-form-field>
+        
+        
+          
+            
+              
+              <mat-form-field appearance="outline">
+                <input
+                maxlength="10"
+                minlength="10"
+                  matInput
+                  placeholder="phonenumber"
+                  required
+                  name="phonenumber"
+                  ngModel
+                  #phonenumber="ngModel">
+                  <mat-error *ngIf="phonenumber.invalid">phonenumber is required</mat-error>
+                <mat-icon matSuffix>smartphone</mat-icon>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <input
+                maxlength="10"
+                minlength="10"
+                  matInput
+                  placeholder="pannumber"
+                  required
+                  name="pannumber"
+                  pattern="^[A-Za-z]{5}[0-9]{4}[A-Za-z]$"
+                  ngModel
+                  #pannumber="ngModel">
+                  <mat-error *ngIf="pannumber.invalid">pannumber is required</mat-error>
+                <mat-icon matSuffix>credit_card</mat-icon>
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                <input
+                minlength="15" maxlength="15" 
+                  matInput
+                  placeholder="gstnumber"
+                  required
+                  name="gstnnumber"
+                  pattern="^[0-9]{2}[A-Za-z]{5}[0-9]{4}[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}$"
+                  ngModel
+                  #gstnnumber="ngModel">
+                  <mat-error *ngIf="gstnnumber.invalid">gstnnumber is required</mat-error>
+                <mat-icon matSuffix></mat-icon>
+              </mat-form-field>
+            </form>
+          
+        </mat-card>
+        
+    
+  </div>
+  

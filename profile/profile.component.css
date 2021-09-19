@@ -1,0 +1,75 @@
+
+.profile{
+    background-color:#2d3436;
+    color: white;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    
+    
+    
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+img{
+    border-radius: 9999px;
+    height: 70px;
+    width: 70px;
+}
+.name{
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 10px
+}
+
+.mail-id{
+    font-weight: 300;
+    font-size: medium;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+.user-info{
+    width: 200px;
+}
+
+.details{
+    align-items: flex-start !important;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.buttons{
+    width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  
+
+  
+  
+}
+.mobile{
+    font-weight: 300;
+    font-size: medium; 
+}
+.button{
+    background-color:#475569;
+    color:white;
+    text-align: center;
+    
+}
+.button1{
+background-color:#4F46E5;
+color: white;
+}
